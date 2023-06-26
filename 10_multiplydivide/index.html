@@ -6,11 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>template</title>
     <script src="script.js" async></script>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        pre {
+            /* color: green; */
+            margin: 0px;
+        }
+
+        /* p {
+            border: black solid 1px;
+            width: auto;
+        } */
+    </style>
 </head>
 <body>
     <form>
-        1st Number: <input type="text" id= "op1"><br>
-        2nd Number: <input type="text" id= "op2"><br>
+        <pre>
+1st Number:  <input type="text" id= "op1" value = "1"><br>
+2nd Number: <input type="text" id= "op2" value = "2"><br>
+        </pre>
     </form>
+<button onclick="multiplyOrDivide('multiply')">Multiply</button>
+<button onclick="multiplyOrDivide('divide')">Divide</button>
+<p>Result: <span id="result"></span></p>
 </body>
 </html>
