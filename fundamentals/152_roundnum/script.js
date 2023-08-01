@@ -1,29 +1,9 @@
 function roundNumToX(num = 0, x = 0) {
-    if (x > num) {
+    if (x < 0) {
         return num;
     }
 
-    let numArray = makeArray(num);
-    console.log(numArray);
-
-    // for (let i = 0; i < x; i++) {
-    //     let len = num.length;
-    //     if (+num[len - 1] >= 5) {
-    //         num[len - 2] += 
-    //     }
-    //     num = num.slice(0, -1);
-    // }
-
-    console.log(typeof num, num);
+    return Math.round(num*(10**x)) / 10**x;
 }
 
-function makeArray(num) {
-    let numString = String(num);
-    let numArray = []
-    for (let i = 0; i < numString.length; i++) {
-        numArray[i] = numString[i]; 
-    }
-    return numArray;
-}
-
-roundNumToX(123.456, 4);
+console.log(roundNumToX(123.456789101112, 7));
