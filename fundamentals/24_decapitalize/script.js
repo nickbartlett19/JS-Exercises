@@ -1,13 +1,12 @@
-function deCapitalize(str) {
-
-    if (isCapitalized(str) == true) {
-        let firstChar = str[0];
-        firstChar = firstChar.toLowerCase;
-        str.splice(1,-1);
-        str = firstChar + str;
+function deCapitalize(inputStr) {
+    if (isCapitalized(inputStr) == true) {
+        let firstChar = inputStr[0];
+        firstChar = firstChar.toLowerCase();
+        newStr = inputStr.slice(1);
+        console.log(newStr);
+        newStr = firstChar + newStr;
     }
-
-    return str;
+    return newStr;
 }
 
 function isCapitalized() {
