@@ -1,13 +1,9 @@
 function strToArray(str) {
     let arr = [];
 
-    arr = str.split(' ')
+    let newStr = str.replace(",", "");
 
-    // for (let i = 0; i < arr.length; i++) {
-    //     if (arr[i].indexOf(',') > -1) {
-    //         arr[i].replace(arr[i].indexOf(','));
-    //     }
-    // }
+    arr = newStr.split(' ')
 
     return arr;
 }
